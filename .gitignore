@@ -122,6 +122,8 @@ lib/
 lib64/
 parts/
 sdist/
+etc/
+share/
 var/
 wheels/
 share/python-wheels/
