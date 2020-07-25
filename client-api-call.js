@@ -18,10 +18,9 @@ fetch('https://api.github.com/graphql', {
 })
 
 
-console.log(jsondata);
-
 // for (key in jsondata.data.user.repositories.nodes){
 //   for (x in jsondata.data.user.repositories.nodes[key].primaryLanguage){
 //     console.log(jsondata.data.user.repositories.nodes[key].primaryLanguage[x]);
 //   }
 // }
+
