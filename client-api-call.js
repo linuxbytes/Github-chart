@@ -1,26 +1,6 @@
-// Basic client call for API of github
-let jsondata;
+// data dump from github api
 
-fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Authorization': 'Bearer dac9275d17f36ca1f442aaeb044c015f7c6a0d36'
-    }, 
-    body: JSON.stringify(
-        {'query': 'query{ user(login: "linuxbytes"){repositories(first:100){nodes{primaryLanguage{name}}}}}'}
-    )
-}).then(function (u) {
-    return u.json();
-}).then(function (json) {
-    jsondata = json;
-})
+var data_dump = '{"data":{"user":{"repositories":{"nodes":[{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"Shell"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":null},{"primaryLanguage":{"name":"CSS"}},{"primaryLanguage":{"name":"Shell"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"Go"}},{"primaryLanguage":null},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":null},{"primaryLanguage":{"name":"CSS"}},{"primaryLanguage":null},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":null},{"primaryLanguage":{"name":"Go"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Vim script"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"CSS"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"C"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"C"}},{"primaryLanguage":null},{"primaryLanguage":{"name":"Swift"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":{"name":"Shell"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"C++"}},{"primaryLanguage":{"name":"PowerShell"}},{"primaryLanguage":{"name":"C++"}},{"primaryLanguage":{"name":"C++"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":null},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"HTML"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":null},{"primaryLanguage":null},{"primaryLanguage":{"name":"JavaScript"}},{"primaryLanguage":{"name":"Shell"}},{"primaryLanguage":{"name":"Python"}},{"primaryLanguage":null}]}}}}'
 
 
-// for (key in jsondata.data.user.repositories.nodes){
-//   for (x in jsondata.data.user.repositories.nodes[key].primaryLanguage){
-//     console.log(jsondata.data.user.repositories.nodes[key].primaryLanguage[x]);
-//   }
-// }
 
