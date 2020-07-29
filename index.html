@@ -12,7 +12,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+    <!-- <script src="./Chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 </head>
 
@@ -37,7 +39,7 @@
     <main class="container">
         <!-- Create a div where the graph will take place -->
         <center>
-            <div id="github_chart"></div>
+            <div id="github_chart" width="400" height="400"></div>
         </center>
 
     </main>
@@ -57,6 +59,59 @@
         crossorigin="anonymous"></script> -->
     <script src="client-api-call.js"></script>
     <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <canvas id="myChart" width="100" height="100"></canvas>
+<script>
+    var data_objects = {
+    "HTML": 11,
+    "Python": 18,
+    "Shell": 4,
+    "JavaScript": 11,
+    "CSS": 3,
+    "Go": 2,
+    "Vim script": 1,
+    "C": 2,
+    "Swift": 1,
+    "C++": 3,
+    "PowerShell": 1
+}
+var ctx = document.getElementById('myChart')
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['HTML', 'Python', 'Shell', 'JavaScript', 'CSS', 'Go'],
+        datasets: [{
+            label: '% of Languages used',
+            data: [11, 18, 4, 11, 3, 2],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
 </body>
 
 </html>
