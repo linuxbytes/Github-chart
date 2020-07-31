@@ -12,10 +12,6 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
-    <!-- <script src="./Chart.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
-    <!-- Latest compiled and minified plotly.js JavaScript -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
 </head>
 
@@ -51,68 +47,8 @@
 
     </footer>
 
-    <!-- <script src="client-api-call.js"></script> -->
-    <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <script src="./app.js"></script>
 
-    <script>
-        var data_objects = {
-            "HTML": 11,
-            "Python": 15,
-            "Shell": 4,
-            "JavaScript": 11,
-            "CSS": 3,
-            "Go": 2,
-            "Vim script": 2,
-            "C": 1,
-            "C++": 3,
-        }
-
-
-        let plot_labels = [];
-        let plot_values = [];
-
-        Object.keys(data_objects).forEach(function (key) {
-            plot_values.push(data_objects[key]);
-            plot_labels.push(key);
-        });
-
-        var data = [{
-            // values: [16, 15, 12, 6, 5, 4, 42],
-            // labels: ['US', 'China', 'European Union', 'Russian Federation', 'Brazil', 'India', 'Rest of World'],
-            values: plot_values,
-            labels: plot_labels,
-            domain: { column: 0 },
-            name: 'Github Chart',
-            hoverinfo: 'label+percent+name',
-            hole: .3,
-            type: 'pie'
-        }];
-
-        var layout = {
-            title: 'LinuxBytes Github Chart',
-            annotations: [
-                {
-                    font: {
-                        size: 20
-                    },
-                    showarrow: false,
-                    text: 'Git',
-                    x: 0.5,
-                    y: 0.5
-                }
-            ],
-            autosize: true,
-            // height: 800,
-            // width: 1200,
-            // height: 80%,
-            // width: 120%,
-            showlegend: false,
-            grid: { rows: 1, columns: 1 }
-        };
-
-        Plotly.newPlot('github_chart', data, layout);
-
-    </script>
 </body>
 
 </html>
