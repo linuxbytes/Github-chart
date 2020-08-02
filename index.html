@@ -9,29 +9,37 @@
     <meta name="description" content="github chart">
     <meta name="author" content="GitHub Chart">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="flex.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
 </head>
 
 
 <body>
-    <header>
+    <header class="header-container">
         <div>
-
             <h1>GitHub Chart</h1>
         </div>
     </header>
     <main class="container">
-        <!-- Create a div where the graph will take place -->
+        <!-- Center the container always -->
         <center>
             <!-- Plotly chart will be drawn inside this DIV -->
-
             <div id='github_chart'>
             </div>
         </center>
 
     </main>
-    <footer class="container bg-dark">
-
+    <footer class="footer-container">
+        <div class="footer-item">
+            <p>footer left</p>
+        </div>
+        <div class="footer-item">
+            <p>footer center</p>
+        </div>
+        <div class="footer-item">
+            <p>footer-right</p>
+        </div>
     </footer>
 
     <script src="./app.js"></script>
