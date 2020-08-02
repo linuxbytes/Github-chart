@@ -1,11 +1,21 @@
-* {
+/* * {
     border: 1px solid red;
+} */
+body {
+    margin: 0;
+    font-size: 22px;
 }
-
 header {
-    background-color: royalblue;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    /* overflow: auto; */
+}
+.git-title{
+    font-family: 'Alfa Slab One';
 }
 
 footer {
     background-color: sienna;
+    min-width: 100%;
+    /* overflow: auto; */
 }
