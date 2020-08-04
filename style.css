@@ -4,18 +4,30 @@
 body {
     margin: 0;
     font-size: 22px;
+    height: 100%;
+
 }
 header {
     background-color: #f1f1f1;
     min-width: 100%;
+    padding-left: 1rem;
     /* overflow: auto; */
 }
-.git-title{
+.git-title {
     font-family: 'Alfa Slab One';
 }
 
-footer {
-    background-color: sienna;
+main {
     min-width: 100%;
-    /* overflow: auto; */
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: blanchedalmond;
+    min-width: 100%;
+    padding: 20px;
+    flex-shrink: 0;
+
+
 }
