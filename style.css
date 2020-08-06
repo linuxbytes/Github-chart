@@ -9,7 +9,7 @@ body {
 }
 header {
     background-color: #f1f1f1;
-    min-width: 100%;
+    max-width: 100%;
     padding-left: 1rem;
     /* overflow: auto; */
 }
@@ -18,14 +18,14 @@ header {
 }
 
 main {
-    min-width: 100%;
+    max-width: 100%;
     flex: 1 0 auto;
     padding: 20px;
 }
 
 footer {
     background-color: blanchedalmond;
-    min-width: 100%;
+    max-width: 100%;
     padding: 20px;
     flex-shrink: 0;
 
