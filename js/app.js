@@ -50,12 +50,8 @@ var layout = {
         }
     ],
     autosize: true,
-    // height: 800,
-    // width: 1200,
-    // height: 80%,
-    // width: 120%,
     showlegend: false,
-    paper_bgcolor: "rgba(0,0,0,.4)",
+    paper_bgcolor: "rgba(0,0,0,0)",
     grid: { rows: 1, columns: 1 }
 };
 
