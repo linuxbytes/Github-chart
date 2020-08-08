@@ -35,12 +35,13 @@ var layout = {
     title: 'LinuxBytes Github Chart',
     font: {
         size: 16,
-        color: "#000"
+        color: "#fff"
     },
     annotations: [
         {
             font: {
-                size: 20
+                size: 20,
+                color: "white"
             },
             showarrow: false,
             text: 'Git',
@@ -54,7 +55,7 @@ var layout = {
     // height: 80%,
     // width: 120%,
     showlegend: false,
-    paper_bgcolor: "rgba(0,0,0,0)",
+    paper_bgcolor: "rgba(0,0,0,.4)",
     grid: { rows: 1, columns: 1 }
 };
 
