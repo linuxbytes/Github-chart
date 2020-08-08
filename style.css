@@ -8,7 +8,9 @@ body {
     margin: 0;
     font-size: 22px;
     height: 100%;
+    background-image: url("john-towner-JgOeRuGD_Y4-unsplash.jpg");
 
+    
 }
 header {
     background-color: #f1f1f1;
@@ -21,10 +23,13 @@ header {
 }
 
 main {
-    max-width: 100%;
     flex: 1 0 auto;
+    max-width: 100%;
     padding: 20px;
+
 }
+
+
 
 footer {
     background-color: blanchedalmond;

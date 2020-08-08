@@ -33,6 +33,10 @@ var data = [{
 
 var layout = {
     title: 'LinuxBytes Github Chart',
+    font: {
+        size: 16,
+        color: "#000"
+    },
     annotations: [
         {
             font: {
@@ -50,6 +54,7 @@ var layout = {
     // height: 80%,
     // width: 120%,
     showlegend: false,
+    paper_bgcolor: "rgba(0,0,0,0)",
     grid: { rows: 1, columns: 1 }
 };
 
