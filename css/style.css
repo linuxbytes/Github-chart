@@ -1,39 +1,33 @@
-
 /* GENERAL STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* * {
     border: 1px solid red;
 } */
 body {
-    margin: 0;
-    font-size: 22px;
-    height: 100%;
-    background-image: url("images/john-towner-JgOeRuGD_Y4-unsplash.jpg");
-
-    
+  margin: 0;
+  font-size: 22px;
+  height: 100%;
+  background-image: url('/images/john-towner-JgOeRuGD_Y4-unsplash.jpg');
 }
 header {
-    background-color: #f1f1f1;
-    max-width: 100%;
-    padding-left: 1rem;
-    /* overflow: auto; */
+  background-color: #f1f1f1;
+  max-width: 100%;
+  padding-left: 1rem;
+  /* overflow: auto; */
 }
 .git-title {
-    font-family: 'Alfa Slab One';
+  font-family: "Alfa Slab One";
 }
 
 main {
-    flex: 1 0 auto;
-    max-width: 100%;
-    padding: 20px;
-
+  flex: 1 0 auto;
+  max-width: 100%;
+  padding: 20px;
 }
 
-
-
 footer {
-    background-color: blanchedalmond;
-    max-width: 100%;
-    margin-top: 30%;
-    flex-shrink: 0;
+  background-color: blanchedalmond;
+  max-width: 100%;
+  margin-top: 30%;
+  flex-shrink: 0;
 }
