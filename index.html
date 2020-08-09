@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/flex.css">
     <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
 </head>
 
@@ -24,19 +25,26 @@
     <main class="container">
         <!-- Center the container always -->
         <center>
+            <h4 id="title-bytes">linuxbytes</h4>
+            <p>I am a Linux engineer by day and a Developer by night who love Linux/Unix, Web and Tech. </p>
             <!-- Plotly chart will be drawn inside this DIV -->
             <div id='github_chart'>
+            </div>
+            <div id="about-chart">
+                <p> Above is a chart using of the framework Plotly with my GitHub data</p>
+                <p> This shows the percents of language
+                    usage in my GitHub repo </p>
             </div>
         </center>
 
     </main>
     <footer class="footer-container">
         <div class="footer-box">
-            <h4>linuxbytes</h4>
-            <p>I am a Linux engineer by day and a Developer by night who love Linux/Unix, Web and Tech. </p>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-linkedin"></a>
         </div>
     </footer>
-
     <script src="js/app.js"></script>
 
 </body>

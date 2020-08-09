@@ -21,5 +21,6 @@
 }
 
 .footer-box {
+  text-align: center;
   flex-grow: 5;
 }
