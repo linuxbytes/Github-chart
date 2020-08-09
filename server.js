@@ -2,13 +2,11 @@ var express = require('express');
 var app = express();
 
 // on the request to root (localhost:3000/)
-app.get('/', function (req, res) {
-    res.send('<b>My</b> first express http server');
-});
+app.use('/', express.static(__dirname + '/'));
 
 // Change the 404 message modifing the middleware
 app.use(function(req, res, next) {
-    res.status(404).send("Sorry, that route doesn't exist. Have a nice day :)");
+    res.status(404).send("Sorry error because is not here :)");
 });
 
 // start the server in the port 3000 !
