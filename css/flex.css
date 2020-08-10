@@ -10,7 +10,6 @@
 .container {
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: flex-start */
 }
 
 .footer-container {
@@ -23,4 +22,6 @@
 .footer-box {
   text-align: center;
   flex-grow: 5;
+  padding: 10px;
+  margin: 10px;
 }

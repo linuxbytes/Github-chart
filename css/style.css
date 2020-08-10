@@ -1,8 +1,14 @@
 /* GENERAL STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Use for CSS Debugging  */
+
+
 /* * {
     border: 1px solid red;
 } */
+
+/* Main Sections */
+
 body {
   margin: 0;
   font-size: 22px;
@@ -33,8 +39,37 @@ p,
 }
 
 footer {
-  background-color: blanchedalmond;
+  background-color: whitesmoke;
   max-width: 100%;
   margin-top: 10%;
   flex-shrink: 0;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1000px;
+}
+.fa:hover{
+  opacity: .7;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+/* Github */
+.fa-github {
+  background: #000122;
+  color: white;
+}
+/* Linkedin */
+.fa-linkedin {
+  background: #555555;
+  color: white;
 }
