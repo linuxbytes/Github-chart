@@ -33,13 +33,12 @@ main {
 }
 
 #title-bytes,
-p,
 #about-chart {
   color: white;
 }
 
 footer {
-  background-color: whitesmoke;
+  background-color: #ffffff;
   max-width: 100%;
   margin-top: 10%;
   flex-shrink: 0;
@@ -48,10 +47,10 @@ footer {
 .fa {
   padding: 15px;
   font-size: 20px;
-  width: 30px;
+  width: 25px;
   text-align: center;
   text-decoration: none;
-  border-radius: 1000px;
+  border-radius: 2000px;
 }
 .fa:hover{
   opacity: .7;
@@ -65,11 +64,11 @@ footer {
 
 /* Github */
 .fa-github {
-  background: #000122;
+  background: #3e4156;
   color: white;
 }
 /* Linkedin */
 .fa-linkedin {
-  background: #555555;
+  background: #546571;
   color: white;
 }
