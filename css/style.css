@@ -2,9 +2,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Use for CSS Debugging  */
 
-
 /* * {
-    border: 1px solid red;
+  border: 1px solid red;
 } */
 
 /* Main Sections */
@@ -33,14 +32,15 @@ main {
 }
 
 #title-bytes,
-#about-chart {
+.sub-title-git,
+#about-chart > p {
   color: white;
 }
 
 footer {
   background-color: #ffffff;
   max-width: 100%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   flex-shrink: 0;
 }
 
@@ -52,8 +52,8 @@ footer {
   text-decoration: none;
   border-radius: 2000px;
 }
-.fa:hover{
-  opacity: .7;
+.fa:hover {
+  opacity: 0.7;
 }
 
 /* Twitter */
@@ -71,4 +71,7 @@ footer {
 .fa-linkedin {
   background: #546571;
   color: white;
+}
+.fa-box1,.fa-box2,.fa-box3{
+  padding-top: 15px;
 }
