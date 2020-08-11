@@ -50,7 +50,7 @@ var layout = {
         }
     ],
     autosize: true,
-    // showlegend: false,
+    showlegend: false,
     paper_bgcolor: "rgba(0,0,0,0)",
     grid: { rows: 1, columns: 1 }
 };
