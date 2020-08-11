@@ -1,8 +1,8 @@
 /* GENERAL STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Use for CSS Debugging  */
-
-/* * {
+/* 
+* {
   border: 1px solid red;
 } */
 
@@ -45,12 +45,13 @@ footer {
 }
 
 .fa {
+  border: 2px solid #111;
   padding: 15px;
   font-size: 20px;
   width: 25px;
   text-align: center;
   text-decoration: none;
-  border-radius: 2000px;
+  /* border-radius: 2000px; */
 }
 .fa:hover {
   opacity: 0.7;
@@ -72,6 +73,8 @@ footer {
   background: #546571;
   color: white;
 }
-.fa-box1,.fa-box2,.fa-box3{
+.fa-box1,
+.fa-box2,
+.fa-box3 {
   padding-top: 15px;
 }
