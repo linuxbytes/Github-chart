@@ -24,6 +24,9 @@ header {
 .git-title {
   font-family: "Alfa Slab One";
 }
+a {
+  text-decoration: none;
+}
 
 main {
   flex: 1 0 auto;
